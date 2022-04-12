@@ -1522,7 +1522,7 @@ FROM
 UPDATE
 	Sleep_Cycle_Record_v3
 SET
-	log_id = (log_id + 1)
+	log_id = (log_id - 1)
 WHERE
 	sleep_cycle_start LIKE "% 0%:%";
 	
